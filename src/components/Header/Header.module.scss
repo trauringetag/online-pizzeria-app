@@ -1,0 +1,15 @@
+@import "src/general";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line {
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 1px solid $white_2;
+  margin: 35px 0;
+}

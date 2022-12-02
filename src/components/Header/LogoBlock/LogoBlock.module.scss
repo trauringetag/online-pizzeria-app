@@ -1,0 +1,44 @@
+@import "src/general";
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+
+  &:active {
+    .icon {
+      position: relative;
+      top: 1px;
+    }
+  }
+  @media (max-width: 570px) {
+    & {
+      div {
+        display: none;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.slogan {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: $grey;
+}

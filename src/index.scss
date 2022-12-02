@@ -1,1 +1,32 @@
 @import "~normalize.css";
+@import "general";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $main-background;
+  font-family: 'Nunito', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+img {
+  display: block;
+}
+
+a {
+  outline: none;
+}
