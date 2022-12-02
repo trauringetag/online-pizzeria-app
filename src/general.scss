@@ -2,8 +2,17 @@ $main-background: #FFDF8C;
 $white_1: #FFFFFF;
 $white_2: #F6F6F6;
 $white_3: #F9F9F9;
+$white_4: #F3F3F3;
 $black_1: #181818;
 $black_2: #2C2C2C;
 $black_3: #282828;
+$black_4: #000000;
 $grey_1: #7B7B7B;
 $orange_1: #FE5F1E;
+
+@mixin picture($width, $height) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
+  pointer-events: none;
+}

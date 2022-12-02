@@ -3,7 +3,7 @@ import Categories from "./Categories/Categories";
 import Sorting from "./Sorting/Sorting";
 
 const Control = () => (
-    <section className={classes.control}>
+    <section className={classes.wrapper}>
         <Categories />
         <Sorting />
     </section>
