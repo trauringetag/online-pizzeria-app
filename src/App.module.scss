@@ -1,7 +1,7 @@
 @import "general";
 
 .container {
-  max-width: 1150px;
+  max-width: 1250px;
   height: 100%;
   margin: 0 auto;
   padding: 25px;
@@ -12,6 +12,9 @@
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background-color: $white_1;
   border-radius: 10px;
   padding: 50px;
@@ -19,5 +22,6 @@
   @media (max-width: 768px) {
     border-radius: 0;
     height: 100%;
+    padding: 25px;
   }
 }

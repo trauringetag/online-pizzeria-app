@@ -1,0 +1,20 @@
+@import "src/general";
+
+.sorting {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: $black_2;
+  font-size: 14px;
+}
+
+.filter {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.group {
+  font-weight: 400;
+  color: $orange_1;
+  border-bottom: 2px dotted $orange_1;
+}

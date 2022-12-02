@@ -12,6 +12,14 @@
       top: 1px;
     }
   }
+  @media (max-width: 1024px) {
+    &:active {
+      .icon {
+        position: relative;
+        top: 0;
+      }
+    }
+  }
   @media (max-width: 570px) {
     & {
       div {
@@ -22,8 +30,8 @@
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   pointer-events: none;
 }
@@ -33,12 +41,12 @@
   font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
-  color: $black;
+  color: $black_1;
 }
 
 .slogan {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  color: $grey;
+  color: $grey_1;
 }
