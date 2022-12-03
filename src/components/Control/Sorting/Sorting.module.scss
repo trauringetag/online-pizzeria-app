@@ -17,4 +17,8 @@
   font-weight: 400;
   color: $orange_1;
   border-bottom: 2px dotted $orange_1;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

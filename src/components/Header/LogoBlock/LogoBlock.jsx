@@ -7,7 +7,7 @@ const LogoBlock = () => (
         <img className={classes.icon} src={Logo} alt={'Логотип'} />
         <div>
             <h1 className={classes.title}>Пиццерия</h1>
-            <p className={classes.slogan}>самая вкусная пицца во вселенной</p>
+            <p className={classes.slogan}>веб-приложение для продажи пиццы</p>
         </div>
     </NavLink>
 );

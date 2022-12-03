@@ -1,0 +1,45 @@
+@import "src/general";
+
+.selectors {
+  padding: 7px;
+  background-color: $white_4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dough, .size {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+
+  @media (max-width: 315px) {
+    flex-direction: column;
+  }
+}
+
+.item {
+  color: $black_2;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.active {
+  background-color: $white_1;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $black_2;
+  border-radius: 5px;
+}
