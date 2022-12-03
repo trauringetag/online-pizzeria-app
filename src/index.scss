@@ -7,16 +7,25 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
   background-color: $main-background;
   font-family: 'Nunito', sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $orange_2;
+  }
+
+  @media (max-width: 768px) {
+    background-color: transparent;
+  }
 }
 
 #root {
@@ -27,6 +36,6 @@ img {
   display: block;
 }
 
-a {
+a, button {
   outline: none;
 }

@@ -2,72 +2,8 @@
 
 .pool {
   display: flex;
-}
-
-.product {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.image {
-  @include picture(250px, 250px);
-  border-radius: 50%;
-}
-
-.title {
-  font-size: 20px;
-  font-weight: 800;
-  color: $black_4;
-  text-align: center;
-}
-
-.selectors {
-  padding: 7px;
-  background-color: $white_4;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.dough, .size {
-  list-style: none;
-  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
   align-items: center;
-  justify-content: space-between;
-  gap: 5px;
-}
-
-.item {
-  color: $black_2;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 10px 20px;
-}
-
-.active {
-  background-color: $white_1;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 700;
-  color: $black_2;
-  border-radius: 5px;
-}
-
-.bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.price {
-  font-size: 22px;
-  font-weight: 700;
-  color: $black_4;
-}
-
-.add {
-  background-color: transparent;
-  padding: 10px 20px;
+  justify-content: center;
 }

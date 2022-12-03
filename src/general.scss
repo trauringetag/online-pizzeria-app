@@ -9,10 +9,13 @@ $black_3: #282828;
 $black_4: #000000;
 $grey_1: #7B7B7B;
 $orange_1: #FE5F1E;
+$orange_2: #EB5A1E;
 
 @mixin picture($width, $height) {
-  width: $width;
-  height: $height;
+  max-width: $width;
+  width: 100%;
+  max-height: $height;
+  height: 100%;
   object-fit: cover;
   pointer-events: none;
 }
