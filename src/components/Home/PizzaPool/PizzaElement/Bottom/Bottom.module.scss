@@ -1,4 +1,4 @@
-@import "src/general";
+@import "../../../../../general";
 
 .wrapper {
   display: flex;
@@ -63,11 +63,22 @@
 }
 
 .count {
+  position: relative;
   transition: .125s ease;
   color: $white_1;
-  font-size: 13px;
   border-radius: 50%;
-  display: block;
-  padding: 5px 7px 3px 8px;
   background-color: $orange_2;
+  width: 20px;
+  height: 20px;
+
+  span {
+    position: absolute;
+    font-size: 14px;
+    top: 3px;
+    right: 5px;
+
+    @media (max-width: 644px) {
+      right: 5.5px;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-@import "general";
+@import "src/general";
 
 .wrapper {
   max-width: 1250px;
@@ -24,10 +24,4 @@
     height: 100%;
     padding: 25px;
   }
-}
-
-.title {
-  font-size: 32px;
-  font-weight: 700;
-  color: $black_4;
 }

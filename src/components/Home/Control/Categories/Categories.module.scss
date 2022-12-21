@@ -1,4 +1,4 @@
-@import "src/general";
+@import "../../../../general";
 
 .categories {
   list-style: none;
@@ -16,7 +16,7 @@
     background-color: transparent;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $black_1;
+    background-color: $orange_1;
   }
   @media (max-width: 992px) {
     width: 100%;
