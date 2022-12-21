@@ -40,3 +40,8 @@ img {
 a, button {
   outline: none;
 }
+
+button {
+  border: unset;
+  background-color: transparent;
+}

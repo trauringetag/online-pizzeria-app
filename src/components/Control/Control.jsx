@@ -3,9 +3,9 @@ import Categories from "./Categories/Categories";
 import Sorting from "./Sorting/Sorting";
 
 const Control = () => (
-    <section className={classes.wrapper}>
+    <div className={classes.wrapper}>
         <Categories />
         <Sorting />
-    </section>
+    </div>
 );
 export default Control;

@@ -10,6 +10,7 @@ $black_4: #000000;
 $grey_1: #7B7B7B;
 $orange_1: #FE5F1E;
 $orange_2: #EB5A1E;
+$orange_3: rgba(254, 95, 30, 0.05);
 
 @mixin picture($width, $height) {
   max-width: $width;
