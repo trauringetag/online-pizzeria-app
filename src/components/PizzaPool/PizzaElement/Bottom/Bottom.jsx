@@ -16,7 +16,7 @@ const Bottom = props => {
             <button className={classes.add} onClick={ onClickAddPizza }>
                 <AddIcon fontSize={'small'}/>
                 <span>Добавить</span>
-                { count === 0 ? <></> : <span className={classes.count}>{ count }</span> }
+                { !count ? <></> : <span className={classes.count}>{ count }</span> }
             </button>
         </div>
     );
