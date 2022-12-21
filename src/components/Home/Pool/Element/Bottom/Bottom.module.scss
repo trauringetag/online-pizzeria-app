@@ -74,11 +74,20 @@
   span {
     position: absolute;
     font-size: 14px;
-    top: 3px;
-    right: 5px;
+    top: 2.75px;
+    right: 5.5px;
+
+    @media (max-width: 1079px) {
+      right: 5.5px;
+    }
 
     @media (max-width: 644px) {
+      top: 3px;
       right: 5.5px;
+    }
+
+    @media (max-width: 315px) {
+      right: 5.75px;
     }
   }
 }
