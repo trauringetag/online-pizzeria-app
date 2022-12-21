@@ -22,7 +22,8 @@ const Sorting = () => {
 
     return (
         <section className={classes.sorting}>
-            <KeyboardArrowUpIcon className={ open ? classes.forward : classes.back } />
+            <KeyboardArrowUpIcon style={{ transform: open ? 'rotate(180deg)' : 'unset', transition: '.5s ease' }}
+            />
             <p className={classes.filter}>Сортировка по:</p>
             <button onClick={ () => setOpen(!open) } className={classes.group}>{ title }</button>
             { open && <ul className={classes.popup}>{ displayList }</ul> }
