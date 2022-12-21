@@ -2,7 +2,7 @@ import classes from './Bottom.module.scss';
 import AddIcon from "@mui/icons-material/Add";
 import { useState } from "react";
 
-const Bottom = () => {
+const Bottom = props => {
     const [count, setCount] = useState(0);
 
     const onClickAddPizza = () => {
@@ -11,8 +11,8 @@ const Bottom = () => {
     };
 
     return (
-        <div className={classes.bottom}>
-            <p className={classes.price}>от 499 ₽</p>
+        <div className={classes.wrapper}>
+            <p className={classes.price}>от { props.price } ₽</p>
             <button className={classes.add} onClick={ onClickAddPizza }>
                 <AddIcon fontSize={'small'}/>
                 <span>Добавить</span>

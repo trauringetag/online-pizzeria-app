@@ -1,16 +1,38 @@
 import classes from './Selectors.module.scss';
+import { useState } from 'react';
 
-const Selectors = () => (
-    <div className={classes.selectors}>
-        <ul className={classes.dough}>
-            <li className={`${classes.item} ${classes.active}`}>тонкое</li>
-            <li className={classes.item}>традиционное</li>
-        </ul>
-        <ul className={classes.size}>
-            <li className={`${classes.item} ${classes.active}`}>26 см.</li>
-            <li className={classes.item}>30 см.</li>
-            <li className={classes.item}>40 см</li>
-        </ul>
-    </div>
-);
+const Selectors = props => {
+    const [size, setSize] = useState(0);
+    const [dough, setDough] = useState(0);
+    const doughs = ['тонкое', 'традиционное'];
+
+    const setCurrentSize = (index) =>
+        size === index ? `${classes.item} ${classes.active}` : classes.item;
+    const setCurrentDough = (index) =>
+        dough === index ? `${classes.item} ${classes.active}` : classes.item;
+
+    const displaySizes = props.sizes.map((value, index) =>
+        <li onClick={() => setSize(index)}
+            key={index}
+            className={setCurrentSize(index)}
+        >
+            { value } см.
+        </li>
+    );
+    const displayDoughs = props.types.map((value, index) =>
+        <li onClick={() => setDough(index)}
+            key={index}
+            className={setCurrentDough(index)}
+        >
+            { doughs[value] }
+        </li>
+    );
+
+    return (
+        <div className={classes.wrapper}>
+            <ul className={classes.dough}>{ displayDoughs }</ul>
+            <ul className={classes.size}>{ displaySizes }</ul>
+        </div>
+    );
+};
 export default Selectors;

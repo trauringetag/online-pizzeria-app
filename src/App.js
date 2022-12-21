@@ -5,12 +5,12 @@ import PizzaPool from "./components/PizzaPool/PizzaPool";
 
 const App = () => (
     <div className={classes.wrapper}>
-        <main className={classes.container}>
+        <section className={classes.container}>
             <Header />
             <Control />
             <h2 className={classes.title}>Все пиццы</h2>
             <PizzaPool />
-        </main>
+        </section>
     </div>
 );
 export default App;
