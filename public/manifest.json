@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Пиццерия",
+  "name": "Веб-приложение для продажи пиццы",
   "icons": [
     {
       "src": "favicon.ico",
