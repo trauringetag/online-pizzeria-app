@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/online-pizzeria-app/static/css/main.c4a81a5f.css",
-    "main.js": "/online-pizzeria-app/static/js/main.42924c87.js",
+    "main.css": "/online-pizzeria-app/static/css/main.812cf3c1.css",
+    "main.js": "/online-pizzeria-app/static/js/main.27fbb7ca.js",
     "static/js/787.b1103a2c.chunk.js": "/online-pizzeria-app/static/js/787.b1103a2c.chunk.js",
     "static/media/logo.svg": "/online-pizzeria-app/static/media/logo.75f1dd94e9a0179d1d82a795e6b05a14.svg",
     "index.html": "/online-pizzeria-app/index.html",
-    "main.c4a81a5f.css.map": "/online-pizzeria-app/static/css/main.c4a81a5f.css.map",
-    "main.42924c87.js.map": "/online-pizzeria-app/static/js/main.42924c87.js.map",
+    "main.812cf3c1.css.map": "/online-pizzeria-app/static/css/main.812cf3c1.css.map",
+    "main.27fbb7ca.js.map": "/online-pizzeria-app/static/js/main.27fbb7ca.js.map",
     "787.b1103a2c.chunk.js.map": "/online-pizzeria-app/static/js/787.b1103a2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4a81a5f.css",
-    "static/js/main.42924c87.js"
+    "static/css/main.812cf3c1.css",
+    "static/js/main.27fbb7ca.js"
   ]
 }
