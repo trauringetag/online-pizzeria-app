@@ -1,12 +1,12 @@
 import classes from './Header.module.scss';
-import LogoBlock from "./LogoBlock/LogoBlock";
-import Basket from "./Basket/Basket";
+import Logo from "./Logo/Logo";
+import CartButton from "./CartButton/CartButton";
 
 const Header = () => (
     <>
         <header className={classes.wrapper}>
-            <LogoBlock />
-            <Basket />
+            <Logo />
+            <CartButton />
         </header>
         <hr className={classes.line} />
     </>

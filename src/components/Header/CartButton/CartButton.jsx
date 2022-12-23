@@ -1,9 +1,9 @@
-import classes from './Basket.module.scss';
+import classes from './CartButton.module.scss';
 import { NavLink } from "react-router-dom";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-const Basket = () => (
-    <NavLink className={classes.basket} to={'/'}>
+const CartButton = () => (
+    <NavLink className={classes.wrapper} to={'/cart'}>
         <p>
             <span>0</span>
             <span>₽</span>
@@ -13,4 +13,4 @@ const Basket = () => (
         </p>
     </NavLink>
 );
-export default Basket;
+export default CartButton;

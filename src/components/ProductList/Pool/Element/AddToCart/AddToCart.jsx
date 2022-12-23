@@ -1,8 +1,8 @@
-import classes from './Bottom.module.scss';
+import classes from './AddToCart.module.scss';
 import AddIcon from "@mui/icons-material/Add";
 import { useState } from "react";
 
-const Bottom = props => {
+const AddToCart = props => {
     const [count, setCount] = useState(0);
 
     const onClickAddPizza = () => {
@@ -21,4 +21,4 @@ const Bottom = props => {
         </div>
     );
 };
-export default Bottom;
+export default AddToCart;

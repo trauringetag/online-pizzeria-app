@@ -1,15 +1,15 @@
 import classes from './Layout.module.scss';
 import Header from "./Header/Header";
 import { Outlet } from "react-router-dom";
-import { BackToTop } from "./CommonComponents/BackToTop";
+import { BackToTopButton } from "./CommonComponents/BackToTopButton";
 
 const Layout = () => (
     <div className={classes.wrapper} id={'wrapper'}>
-        <section className={classes.container}>
+        <div className={classes.container}>
             <Header />
             <Outlet />
-            <BackToTop />
-        </section>
+            <BackToTopButton />
+        </div>
     </div>
 );
 export default Layout;

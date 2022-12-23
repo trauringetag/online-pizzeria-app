@@ -1,14 +1,14 @@
-import classes from './LogoBlock.module.scss';
+import classes from './Logo.module.scss';
 import { NavLink } from "react-router-dom";
-import Logo from "../../../assets/logo.svg";
+import LogoIcon from "../../../assets/logo.svg";
 
-const LogoBlock = () => (
+const Logo = () => (
     <NavLink className={classes.logo} to={'/'}>
-        <img className={classes.icon} src={Logo} alt={'Логотип'} />
+        <img className={classes.icon} src={ LogoIcon } alt={'Логотип'} />
         <div>
             <h1 className={classes.title}>Пиццерия</h1>
             <p className={classes.slogan}>веб-приложение для продажи пиццы</p>
         </div>
     </NavLink>
 );
-export default LogoBlock;
+export default Logo;
