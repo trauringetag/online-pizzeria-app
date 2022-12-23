@@ -16,7 +16,7 @@ function ScrollTop (props) {
 
     const handleClick = (event) => {
         const anchor = (event.target.ownerDocument || document).querySelector('#wrapper');
-        if (anchor) anchor.scrollIntoView({block: 'start'});
+        if (anchor) anchor.scrollIntoView({block: 'start', behavior: 'smooth'});
     };
 
     return (
