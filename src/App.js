@@ -9,8 +9,8 @@ const App = () => (
         <Route path={'/'} element={<Layout />}>
             <Route index element={<ProductList />}/>
             <Route path={'online-pizzeria-app'} element={<Navigate to={'/'} />} />
-            <Route path={'*'} element={<PageNotFound />} />
             <Route path={'/cart'} element={<EmptyCart />} />
+            <Route path={'*'} element={<PageNotFound />} />
         </Route>
     </Routes>
 );

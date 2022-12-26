@@ -9,10 +9,15 @@
   background-color: $orange_1;
   padding: 15px 20px;
   border-radius: 30px;
+  transition: .125s ease;
 
+  &:hover {
+    background-color: $orange_4;
+  }
   &:active {
     position: relative;
     top: 1px;
+    background-color: $orange_5;
   }
   p {
     margin: 0;
@@ -21,6 +26,9 @@
     gap: 5px;
   }
   @media (max-width: 1024px) {
+    &:hover {
+      background-color: $orange_1;
+    }
     &:active {
       position: relative;
       top: 0;
