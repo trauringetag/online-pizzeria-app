@@ -1,6 +1,6 @@
 import classes from './EmptyCart.module.scss';
 import EmptyCartImage from '../../assets/empty-cart.svg';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 
 const EmptyCart = () => {
     const navigate = useNavigate();
